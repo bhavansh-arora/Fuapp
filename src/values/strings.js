@@ -34,8 +34,8 @@ export const variableStrings = {
       buy: "Buy",
       sell: "Sell",
       rating: "Rate us on Play/App Store",
-      appShare: "Share our app with friends and family",
-      websiteShare: "Share our website with friends and family",
+      appShare: "Share our app",
+      websiteShare: "Share our website",
       about: "About Us",
       contact: "Contact Us",
       termsOfService: "Terms of Service",
@@ -49,7 +49,14 @@ export const variableStrings = {
       total: "Total Earned",
       elevators_info: "Please check back again to see if the elevator is approved",
       message: "Message",
-      updateProfile: "Update Profile"
+      updateProfile: "Update Profile",
+      stepsHistory: "Steps History",
+      yesterday: "Yesterday",
+      AlreadyTaken: "Already taken",
+      step: "Steps",
+      TimeLeft: "Seconds left",
+      addElevator: "Add Elevator",
+      allElevators: "View all Elevators"
 
 
      },

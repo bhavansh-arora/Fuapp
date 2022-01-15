@@ -14,14 +14,23 @@ import {COLORS} from '../../assets/colors/theme_colors';
 import { variableStrings } from '../../values/strings';
 import TasksImage from '../../assets/images/task.png';
 import Entypo from 'react-native-vector-icons/Entypo';
+import Dollar from '../../assets/images/dollar.png';
 
 function Tasks({navigation}) {
     return (
     <SafeAreaView style={styles.main_container}>
         <StatusBar
         animated={true}
-        backgroundColor={COLORS.BACKGROUND}
+        backgroundColor={COLORS.PRIMARY}
         barStyle='dark-content' />
+        <View style={styles.navbar}>
+            <View style={styles.amount_container}>
+            <Image source={Dollar} style={styles.dollar_image} />
+            <Text style={styles.welcome_text}>0</Text>
+            </View>
+            <Text style={styles.welcome_text}>{variableStrings['en-US'].welcome_back}</Text>
+            <View style={{flex:1}}></View>
+        </View>
         <ScrollView style={styles.scroll_container}>
         <Image source={TasksImage} style={styles.settings_image} />
         <Text style={styles.settings}>{variableStrings['en-US'].tasks}</Text>

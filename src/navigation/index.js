@@ -15,6 +15,7 @@ import MobileVerification from '../screens/MobileVerification';
 import Elevators from '../screens/Elevators';
 import Settings from '../screens/Settings';
 import Tasks from '../screens/Tasks';
+import Steps from '../screens/Steps';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -35,7 +36,7 @@ export function AppHome() {
        >
       <Tab.Screen
         name="StepTracker"
-        component={Elevators}
+        component={Steps}
         options={{
           tabBarIcon: ({focused}) => {
             if (focused == true) {

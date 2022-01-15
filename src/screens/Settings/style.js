@@ -50,6 +50,45 @@ export default StyleSheet.create({
         textAlign: "center",
         marginBottom: 50,
         marginTop: 20
-    }
+    },
+    navbar: {
+        width:"100%",
+        height: 40,
+        elevation: 5,
+        backgroundColor: COLORS.PRIMARY,
+shadowOffset: {
+	width: 0,
+	height: 2,
+},
+shadowOpacity: 0.25,
+shadowRadius: 3.84,
+elevation: 5,
+          shadowColor: COLORS.BACKGROUND,
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          paddingBottom: 5,
+          paddingHorizontal: 15,
+          borderBottomLeftRadius: 15,
+          borderBottomRightRadius: 15,
+
+    },
+    dollar_image:{
+        width:20,
+        height:20,
+        marginRight: 5
+    },
+    amount_container:{
+        display: "flex",
+        flexDirection: "row",
+        flex:1,
+        alignItems: "center",
+    },
+    welcome_text: {
+        flex:1,
+        fontFamily: "PTSans-Bold",
+        fontSize: 19,
+        color: COLORS.BACKGROUND
+    },
     
 })

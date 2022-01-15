@@ -5,5 +5,6 @@ export const COLORS = {
     ICON_UNSELECTED: '#a6a6a6',
     INFO: "#7d7d7d",
     BLACK: "#000",
-    ICON_COLOR: "#000f77"
+    ICON_COLOR: "#000f77",
+    TRAIL: "#A3AFFF"
   };

@@ -11,5 +11,131 @@ export default StyleSheet.create({
         backgroundColor:COLORS.BACKGROUND,
         flex:1
     },
+    elevators_image:{
+        width:0.40*width,
+        height:165,
+        marginLeft: "5%",
+        marginLeft: "30%",
+        marginTop: 20,
+    },
+    settings_button_container:{
+        width:"100%",
+        height: 65,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        flexDirection: "row",
+        paddingHorizontal: 20,
+        borderColor:COLORS.PRIMARY,
+        borderWidth: 0.5
+    },
+    arrow_bg:{
+        width: 30,
+        height: 30,
+        borderRadius: 30,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: COLORS.ICON_COLOR
+    },
+    settings_text:{
+        fontFamily: "PTSans-Bold",
+        fontSize: 18,
+        color: COLORS.ICON_COLOR
+    },
+    settings: {
+        fontFamily: "PTSans-Bold",
+        fontSize:27,
+        color: COLORS.BLACK,
+        textAlign: "center",
+        marginBottom: 50,
+        marginTop: 25
+    },
+    navbar: {
+        width:"100%",
+        height: 40,
+        elevation: 5,
+        backgroundColor: COLORS.PRIMARY,
+shadowOffset: {
+	width: 0,
+	height: 2,
+},
+shadowOpacity: 0.25,
+shadowRadius: 3.84,
+elevation: 5,
+          shadowColor: COLORS.BACKGROUND,
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          paddingBottom: 5,
+          paddingHorizontal: 15,
+          borderBottomLeftRadius: 15,
+          borderBottomRightRadius: 15,
+
+    },
+    dollar_image:{
+        width:20,
+        height:20,
+        marginRight: 5
+    },
+    amount_container:{
+        display: "flex",
+        flexDirection: "row",
+        flex:1,
+        alignItems: "center",
+    },
+    welcome_text: {
+        flex:1,
+        fontFamily: "PTSans-Bold",
+        fontSize: 19,
+        color: COLORS.BACKGROUND
+    },
+    fields_input:{
+        width:"90%",
+        height:45,
+        borderWidth:2,
+        borderColor: COLORS.PRIMARY,
+        paddingLeft: 10,
+        borderRadius: 10,
+        fontFamily: "PTSans-Regular",
+        fontSize: 17,
+        marginTop: 10,
+        marginLeft: "5%"
+
+    },
+    add_elevators_button:{
+        width: "90%",
+        height: 50,
+        backgroundColor: COLORS.PRIMARY,
+        borderRadius: 30,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop:40,
+        marginLeft: "5%"
+    },
+    add_elevators_button_text:{
+        color: COLORS.BACKGROUND,
+        fontFamily: "PTSans-Regular",
+        fontSize: 19
+    },
+    all_elevators_button:{
+        width: "90%",
+        height: 50,
+        backgroundColor: COLORS.BACKGROUND,
+        borderRadius: 30,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        borderWidth: 2,
+        borderColor: COLORS.PRIMARY,
+        marginLeft: "5%",
+        marginTop: 20
+    },
+    all_elevators_button_text:{
+        color: COLORS.PRIMARY,
+        fontFamily: "PTSans-Regular",
+        fontSize: 19
+    },
     
 })
