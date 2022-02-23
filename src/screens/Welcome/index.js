@@ -27,10 +27,10 @@ function Welcome({navigation}) {
             <Text style={styles.welcome_info}>{variableStrings['en-US'].welcome_info}</Text>
             </View>
             <View style={styles.horizontal_button_container}>
-                <TouchableOpacity style={styles.login_button}>
+                <TouchableOpacity style={styles.login_button} onPress={()=>navigation.navigate("Login")}>
                     <Text style={styles.login_button_text}>{variableStrings['en-US'].login}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.signup_button}>
+                <TouchableOpacity style={styles.signup_button} onPress={()=>navigation.navigate("Auth")}>
                     <Text style={styles.signup_button_text}>{variableStrings['en-US'].signup}</Text>
                 </TouchableOpacity>
             </View>

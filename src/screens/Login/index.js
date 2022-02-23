@@ -32,7 +32,7 @@ function Login({navigation}) {
             <TouchableOpacity style={styles.login_button}>
                     <Text style={styles.login_button_text}>{variableStrings['en-US'].login}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.horizontalNoAccountRegisterContainer}>
+                <TouchableOpacity style={styles.horizontalNoAccountRegisterContainer} onPress={()=>navigation.navigate("Auth")}>
             <Text style={styles.noAccount}>{variableStrings['en-US'].noAccount}</Text>
             <Text style={styles.registerNow}>{variableStrings['en-US'].signup}</Text>
         </TouchableOpacity>

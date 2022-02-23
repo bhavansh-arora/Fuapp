@@ -10,12 +10,11 @@ import {COLORS} from '../assets/colors/theme_colors';;
 
 import Login from '../screens/Login';
 import Welcome from '../screens/Welcome';
-import Register from '../screens/Register';
-import MobileVerification from '../screens/MobileVerification';
 import Elevators from '../screens/Elevators';
 import Settings from '../screens/Settings';
 import Tasks from '../screens/Tasks';
 import Steps from '../screens/Steps';
+import Authentication from '../screens/Authentication';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -94,15 +93,14 @@ function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="Welcome"
         screenOptions={{
           headerShown: false,
         }}>
         <Stack.Screen name="Welcome" component={Welcome} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Register" component={Register} />
-        <Stack.Screen name="Mobile-Verification" component={MobileVerification} />
         <Stack.Screen name="Home" component={AppHome} options={{ headerShown: false }} />
+        <Stack.Screen name="Auth" component={Authentication} />
       </Stack.Navigator>
     </NavigationContainer>
   );

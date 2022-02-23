@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.fuapp",
+    package = "com.fuprojects.fuapp",
 )
 
 android_resource(
     name = "res",
-    package = "com.fuapp",
+    package = "com.fuprojects.fuapp",
     res = "src/main/res",
 )
 

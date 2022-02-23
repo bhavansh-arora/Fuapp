@@ -1,4 +1,4 @@
-package com.fuapp;
+package com.fuprojects.fuapp;
 
 import com.facebook.react.ReactActivity;
 

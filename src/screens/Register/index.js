@@ -13,8 +13,10 @@ import styles from './style';
 import {COLORS} from '../../assets/colors/theme_colors'
 import { variableStrings } from '../../values/strings';
 import SignupImage from '../../assets/images/signup-screen.png'
+import { useNavigation } from '@react-navigation/native';
 
-function Register({navigation}) {
+function Register(props) {
+    const navigation = useNavigation(); 
     return (
     <SafeAreaView style={styles.main_container}>
         <StatusBar
@@ -29,10 +31,10 @@ function Register({navigation}) {
             <TextInput style={styles.fields_input} placeholder={variableStrings['en-US'].emailPlaceholder} />
             <TextInput style={styles.fields_input} placeholder={variableStrings['en-US'].passwordPlaceholder} />
             <TextInput style={styles.fields_input} placeholder={variableStrings['en-US'].confirmPasswordPlaceholder} />
-            <TouchableOpacity style={styles.signup_button}>
+            <TouchableOpacity style={styles.signup_button} onPress={() => props.emailVerification()}>
                     <Text style={styles.signup_button_text}>{variableStrings['en-US'].signup}</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.horizontalNoAccountRegisterContainer}>
+                <TouchableOpacity style={styles.horizontalNoAccountRegisterContainer} onPress={()=>navigation.navigate("Login")}>
             <Text style={styles.accountPresent}>{variableStrings['en-US'].accountPresent}</Text>
             <Text style={styles.loginNow}>{variableStrings['en-US'].login}</Text>
         </TouchableOpacity>

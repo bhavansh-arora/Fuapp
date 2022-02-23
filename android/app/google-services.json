@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "665387711724",
+    "project_id": "fuapp-cef59",
+    "storage_bucket": "fuapp-cef59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665387711724:android:6c8750f7498274120b39c9",
+        "android_client_info": {
+          "package_name": "com.fuprojects.fuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665387711724-vl9mta2281b3itnomdivoovrr7p1c9fc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fuprojects.fuapp",
+            "certificate_hash": "c8c170b7ccd08b01f125509932c987879459c634"
+          }
+        },
+        {
+          "client_id": "665387711724-jo5jec9r72lqbucgh52jrdaovu8imd42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBLVXk-LM6Tm6pFbmTrLxm59LHQg0m8vY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665387711724-jo5jec9r72lqbucgh52jrdaovu8imd42.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "665387711724-f5ekepi08b0fch1lr6tanjv855pm29fu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fuprojects.fuapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
